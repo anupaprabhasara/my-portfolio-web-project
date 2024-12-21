@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Light theme scrollbar */
+  .light ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .light ::-webkit-scrollbar-track {
+    @apply bg-gray-100;
+  }
+
+  .light ::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 hover:bg-gray-400 rounded-full;
+  }
+
+  /* Dark theme scrollbar */
+  .dark ::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .dark ::-webkit-scrollbar-track {
+    @apply bg-gray-900;
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    @apply bg-gray-700 hover:bg-gray-600 rounded-full;
+  }
+}
+
+.ambient-light {
+  @apply pointer-events-none absolute -z-10 h-[500px] w-[500px] rounded-full opacity-30 blur-3xl;
+}
+
+.gradient-background {
+  background: radial-gradient(circle at top left, rgba(59, 130, 246, 0.1), transparent 40%),
+              radial-gradient(circle at bottom right, rgba(236, 72, 153, 0.1), transparent 40%);
+}
+
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-pink-600;
+}
+
+.card-gradient {
+  @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm;
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .ambient-light {
+    @apply opacity-20;
+  }
+  
+  .gradient-text {
+    @apply text-3xl;
+  }
+}
