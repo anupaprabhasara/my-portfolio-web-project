@@ -77,7 +77,7 @@ export function ContactForm() {
                      dark:text-white transition-all duration-200
                      placeholder-gray-400 dark:placeholder-gray-500
                      backdrop-blur-sm"
-            placeholder="your.email@example.com"
+            placeholder="username@domain.com"
             disabled={isSubmitting}
           />
         </div>
