@@ -28,7 +28,7 @@ export default function Home() {
           </p>
           
           <div className="mt-8 flex justify-center space-x-6">
-          <a
+            <a
               href="https://github.com/anupaprabhasara"
               target="_blank"
               rel="noopener noreferrer"
