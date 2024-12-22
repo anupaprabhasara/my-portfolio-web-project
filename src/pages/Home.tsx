@@ -32,7 +32,7 @@ export default function Home() {
               href="https://github.com/anupaprabhasara"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-all"
+              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white transition-all"
             >
               <Github className="w-6 h-6" />
             </a>
@@ -40,13 +40,13 @@ export default function Home() {
               href="https://www.linkedin.com/in/anupaprabhasara"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-all"
+              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white transition-all"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="mailto:info@anupa.lk"
-              className="p-3 rounded-full bg-white/10 backdrop-blur-sm hover:bg-white/20 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-all"
+              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white transition-all"
             >
               <Mail className="w-6 h-6" />
             </a>
