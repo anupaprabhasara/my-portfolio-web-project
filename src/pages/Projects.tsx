@@ -30,7 +30,7 @@ const projects = [
     image: HTMLPortfolio,
     technologies: ['HTML', 'CSS', 'JS', 'Sitemap', 'Forms'],
     github: 'https://github.com/anupaprabhasara/Simple-Personal-Portfolio',
-    live: 'https://anupa.lk',
+    live: 'https://www.anupa.lk',
   },
   {
     title: 'News and Blogging Platform',
