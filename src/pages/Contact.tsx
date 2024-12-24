@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 import { ContactForm } from '../components/forms/ContactForm';
 
 export default function Contact() {
+  useEffect(() => {
+    document.title = "Contact";
+  }, []);
   return (
     <PageLayout>
       <AnimatedSection>

@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 
@@ -27,6 +28,9 @@ const experiences = [
 ];
 
 export default function Experience() {
+  useEffect(() => {
+    document.title = "Experience";
+  }, []);
   return (
     <PageLayout>
       <AnimatedSection>

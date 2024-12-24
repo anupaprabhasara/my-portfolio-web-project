@@ -1,9 +1,13 @@
+import { useEffect } from 'react';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 import ProPic from '../assets/hero.jpg';
 
 export default function Home() {
+  useEffect(() => {
+    document.title = "Anupa Prabhasara";
+  }, []);
   return (
     <PageLayout>
       <div className="text-center">

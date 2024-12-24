@@ -1,8 +1,12 @@
+import { useEffect } from 'react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 import AboutImg from '../assets/about.png';
 
 export default function About() {
+  useEffect(() => {
+    document.title = "About";
+  }, []);
   return (
     <PageLayout>
       <AnimatedSection>
