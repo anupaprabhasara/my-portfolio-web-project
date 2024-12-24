@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import { Github, ExternalLink } from 'lucide-react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
@@ -42,6 +43,9 @@ const projects = [
 ];
 
 export default function Projects() {
+  useEffect(() => {
+    document.title = "Projects";
+  }, []);
   return (
     <PageLayout>
       <AnimatedSection>
