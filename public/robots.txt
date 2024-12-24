@@ -1,17 +1,8 @@
 User-agent: *
 Allow: /
 
-# Sitemap location
 Sitemap: https://anupa.lk/sitemap.xml
 
-# Prevent access to API routes
-Disallow: /api/
-
-# Prevent access to admin routes
-Disallow: /admin/
-
-# Prevent indexing of search results
+Disallow: /api
+Disallow: /admin
 Disallow: /search
-
-# Rate limiting
-Crawl-delay: 10
