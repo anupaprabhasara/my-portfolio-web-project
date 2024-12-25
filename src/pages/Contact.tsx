@@ -7,6 +7,13 @@ import { ContactForm } from '../components/forms/ContactForm';
 export default function Contact() {
   useEffect(() => {
     document.title = "Contact";
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://www.anupa.lk/contact";
+    document.head.appendChild(canonical);
+    return () => {
+      document.head.removeChild(canonical);
+    };
   }, []);
   return (
     <PageLayout>
