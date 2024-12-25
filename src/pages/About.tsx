@@ -6,7 +6,15 @@ import AboutImg from '../assets/about.png';
 export default function About() {
   useEffect(() => {
     document.title = "About";
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://www.anupa.lk/about";
+    document.head.appendChild(canonical);
+    return () => {
+      document.head.removeChild(canonical);
+    };
   }, []);
+  
   return (
     <PageLayout>
       <AnimatedSection>

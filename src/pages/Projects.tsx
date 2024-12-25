@@ -45,6 +45,13 @@ const projects = [
 export default function Projects() {
   useEffect(() => {
     document.title = "Projects";
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://www.anupa.lk/projects";
+    document.head.appendChild(canonical);
+    return () => {
+      document.head.removeChild(canonical);
+    };
   }, []);
   return (
     <PageLayout>

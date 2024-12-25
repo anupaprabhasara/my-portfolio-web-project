@@ -7,6 +7,13 @@ import ProPic from '../assets/hero.jpg';
 export default function Home() {
   useEffect(() => {
     document.title = "Anupa Prabhasara";
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://www.anupa.lk/";
+    document.head.appendChild(canonical);
+    return () => {
+      document.head.removeChild(canonical);
+    };
   }, []);
   return (
     <PageLayout>

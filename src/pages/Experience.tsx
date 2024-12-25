@@ -30,6 +30,13 @@ const experiences = [
 export default function Experience() {
   useEffect(() => {
     document.title = "Experience";
+    const canonical = document.createElement("link");
+    canonical.rel = "canonical";
+    canonical.href = "https://www.anupa.lk/experience";
+    document.head.appendChild(canonical);
+    return () => {
+      document.head.removeChild(canonical);
+    };
   }, []);
   return (
     <PageLayout>
