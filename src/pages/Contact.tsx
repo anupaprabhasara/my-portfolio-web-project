@@ -1,22 +1,18 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 import { ContactForm } from '../components/forms/ContactForm';
 
 export default function Contact() {
-  useEffect(() => {
-    document.title = "Contact";
-    const canonical = document.createElement("link");
-    canonical.rel = "canonical";
-    canonical.href = "https://www.anupa.lk/contact";
-    document.head.appendChild(canonical);
-    return () => {
-      document.head.removeChild(canonical);
-    };
-  }, []);
   return (
     <PageLayout>
+      <Helmet>
+        <title>Contact</title>
+        <meta name="description" content="Get in touch with Anupa Prabhasara for collaboration and projects! Whether you're looking for web development expertise or software solutions, I'm here to create impactful digital experiences together." />
+        <link rel="canonical" href="https://www.anupa.lk/contact" />
+      </Helmet>
+
       <AnimatedSection>
         <h2 className="text-4xl font-bold gradient-text pb-1">Contact</h2>
       </AnimatedSection>

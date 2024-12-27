@@ -2,7 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.anupa.lk/sitemap.xml
-
-Disallow: /api
-Disallow: /admin
-Disallow: /search
