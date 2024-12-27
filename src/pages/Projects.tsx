@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Github, ExternalLink } from 'lucide-react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
@@ -43,18 +43,14 @@ const projects = [
 ];
 
 export default function Projects() {
-  useEffect(() => {
-    document.title = "Projects";
-    const canonical = document.createElement("link");
-    canonical.rel = "canonical";
-    canonical.href = "https://www.anupa.lk/projects";
-    document.head.appendChild(canonical);
-    return () => {
-      document.head.removeChild(canonical);
-    };
-  }, []);
   return (
     <PageLayout>
+      <Helmet>
+        <title>Projects</title>
+        <meta name="description" content="Showcasing Anupa Prabhasara’s diverse range of web development and software engineering projects. From frontend design to backend development, dive into my creative process and the innovative solutions I've developed." />
+        <link rel="canonical" href="https://www.anupa.lk/projects" />
+      </Helmet>
+
       <AnimatedSection>
         <h2 className="text-4xl font-bold gradient-text pb-1">Projects</h2>
       </AnimatedSection>

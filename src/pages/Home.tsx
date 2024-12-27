@@ -1,22 +1,18 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { Github, Linkedin, Mail } from 'lucide-react';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 import ProPic from '../assets/hero.jpg';
 
 export default function Home() {
-  useEffect(() => {
-    document.title = "Anupa Prabhasara";
-    const canonical = document.createElement("link");
-    canonical.rel = "canonical";
-    canonical.href = "https://www.anupa.lk/";
-    document.head.appendChild(canonical);
-    return () => {
-      document.head.removeChild(canonical);
-    };
-  }, []);
   return (
     <PageLayout>
+      <Helmet>
+        <title>Anupa Prabhasara</title>
+        <meta name="description" content="Explore my journey as a Software Engineering undergraduate passionate about web development and software solutions. Learn about my skills, projects, and how we can collaborate to create amazing digital solutions." />
+        <link rel="canonical" href="https://www.anupa.lk/" />
+      </Helmet>
+      
       <div className="text-center">
         <AnimatedSection>
           <div className="relative">

@@ -1,22 +1,17 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 import AboutImg from '../assets/about.png';
 
-export default function About() {
-  useEffect(() => {
-    document.title = "About";
-    const canonical = document.createElement("link");
-    canonical.rel = "canonical";
-    canonical.href = "https://www.anupa.lk/about";
-    document.head.appendChild(canonical);
-    return () => {
-      document.head.removeChild(canonical);
-    };
-  }, []);
-  
+export default function About() {  
   return (
     <PageLayout>
+      <Helmet>
+        <title>About</title>
+        <meta name="description" content="Learn more about Anupa Prabhasara, a dedicated Software Engineering student passionate about web development and software solutions. Discover my journey, skills, and how I strive to turn ideas into functional and user-friendly digital experiences." />
+        <link rel="canonical" href="https://www.anupa.lk/about" />
+      </Helmet>
+
       <AnimatedSection>
         <h2 className="text-4xl font-bold gradient-text pb-1">About Me</h2>
       </AnimatedSection>

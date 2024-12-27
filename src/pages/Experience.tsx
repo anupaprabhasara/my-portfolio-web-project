@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
 
@@ -28,18 +28,14 @@ const experiences = [
 ];
 
 export default function Experience() {
-  useEffect(() => {
-    document.title = "Experience";
-    const canonical = document.createElement("link");
-    canonical.rel = "canonical";
-    canonical.href = "https://www.anupa.lk/experience";
-    document.head.appendChild(canonical);
-    return () => {
-      document.head.removeChild(canonical);
-    };
-  }, []);
   return (
     <PageLayout>
+      <Helmet>
+        <title>Experience</title>
+        <meta name="description" content="Explore Anupa Prabhasara’s professional journey in web development and software engineering. Highlighting my skills in frontend and backend technologies, cloud platforms, and real-world projects that solve real-world challenges." />
+        <link rel="canonical" href="https://www.anupa.lk/experience" />
+      </Helmet>
+
       <AnimatedSection>
         <h2 className="text-4xl font-bold gradient-text pb-1">Experience</h2>
       </AnimatedSection>
