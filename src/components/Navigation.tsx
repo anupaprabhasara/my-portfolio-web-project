@@ -95,8 +95,8 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
                 to={to}
                 className={`flex items-center px-3 py-2 rounded-lg text-base font-medium ${
                   location.pathname === to
-                    ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                    ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
+                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
                 }`}
               >
                 <Icon className="w-5 h-5 mr-3" />
