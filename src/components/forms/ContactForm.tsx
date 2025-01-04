@@ -48,9 +48,8 @@ export function ContactForm() {
             onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
             required
             className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
-                     border border-gray-200 dark:border-gray-700
+                     border border-gray-200 dark:border-gray-700 dark:text-white
                      focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                     dark:text-white transition-all duration-200
                      placeholder-gray-400 dark:placeholder-gray-500
                      backdrop-blur-sm"
             placeholder="Your name"
@@ -72,9 +71,8 @@ export function ContactForm() {
             onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
             required
             className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
-                     border border-gray-200 dark:border-gray-700
+                     border border-gray-200 dark:border-gray-700 dark:text-white
                      focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                     dark:text-white transition-all duration-200
                      placeholder-gray-400 dark:placeholder-gray-500
                      backdrop-blur-sm"
             placeholder="username@domain.com"
@@ -96,9 +94,8 @@ export function ContactForm() {
             onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
             required
             className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
-                     border border-gray-200 dark:border-gray-700
+                     border border-gray-200 dark:border-gray-700 dark:text-white
                      focus:ring-2 focus:ring-blue-500 focus:border-transparent
-                     dark:text-white transition-all duration-200
                      placeholder-gray-400 dark:placeholder-gray-500
                      backdrop-blur-sm resize-none"
             placeholder="Your message..."
@@ -121,11 +118,11 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={isSubmitting}
-          className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white py-4 px-6 rounded-lg
-                   hover:from-blue-700 hover:to-blue-800 focus:outline-none focus:ring-2 
-                   focus:ring-blue-500 focus:ring-offset-2 transition-all duration-200
+          className="w-full bg-gradient-to-r from-blue-600 to-blue-700 text-white
+                   hover:from-blue-700 hover:to-blue-800 focus:outline-none
+                   focus:ring-blue-500 focus:ring-offset-2 py-4 px-6 rounded-lg
                    disabled:opacity-50 disabled:cursor-not-allowed
-                   font-medium text-sm shadow-lg"
+                   font-medium text-sm shadow-lg focus:ring-2"
         >
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>

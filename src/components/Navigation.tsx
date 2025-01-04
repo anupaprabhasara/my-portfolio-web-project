@@ -54,7 +54,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
               <Link
                 key={to}
                 to={to}
-                className={`inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                className={`inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium ${
                   location.pathname === to
                     ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
                     : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'

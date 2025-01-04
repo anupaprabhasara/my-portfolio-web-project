@@ -19,7 +19,7 @@ export default function Home() {
             <img
               src={ProPic}
               alt="Profile"
-              className="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-white/10 shadow-xl"
+              className="mx-auto h-32 w-32 rounded-full object-cover ring-4 ring-black/10 dark:ring-white/10 shadow-xl"
             />
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-pink-500/20 animate-pulse" />
           </div>
@@ -39,7 +39,7 @@ export default function Home() {
               href="https://github.com/anupaprabhasara"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white transition-all"
+              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white"
             >
               <Github className="w-6 h-6" />
             </a>
@@ -47,13 +47,13 @@ export default function Home() {
               href="https://www.linkedin.com/in/anupaprabhasara"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white transition-all"
+              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white"
             >
               <Linkedin className="w-6 h-6" />
             </a>
             <a
               href="mailto:info@anupa.lk"
-              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white transition-all"
+              className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white"
             >
               <Mail className="w-6 h-6" />
             </a>
