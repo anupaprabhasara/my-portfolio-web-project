@@ -37,7 +37,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 w-full bg-white/90 dark:bg-gray-900/90 backdrop-blur-lg shadow-lg z-50">
+    <nav className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/90 backdrop-blur-lg shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -56,8 +56,8 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
                 to={to}
                 className={`inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
                   location.pathname === to
-                    ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
+                    ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
+                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
                 }`}
               >
                 <Icon className="w-4 h-4 mr-2" />

@@ -7,6 +7,11 @@
     -webkit-tap-highlight-color: transparent;
   }
 
+  /* Hide scrollbar */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
   /* Light theme scrollbar */
   .light ::-webkit-scrollbar {
     @apply w-2;
@@ -51,7 +56,6 @@
   @apply bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm;
 }
 
-/* Mobile optimizations */
 @media (max-width: 768px) {
   .ambient-light {
     @apply opacity-20;
