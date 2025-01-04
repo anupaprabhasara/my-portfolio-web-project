@@ -43,7 +43,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
           {/* Logo */}
           <Link 
             to="/" 
-            className="text-1xl md:text-3xl font-bold gradient-text hover:opacity-80 transition-opacity"
+            className="text-1xl md:text-3xl font-bold gradient-text hover:opacity-80"
           >
             Anupa
           </Link>
@@ -74,7 +74,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
             <ThemeToggle theme={theme} setTheme={setTheme} />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors"
+              className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -93,7 +93,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
               <Link
                 key={to}
                 to={to}
-                className={`flex items-center px-3 py-2 rounded-lg text-base font-medium transition-colors ${
+                className={`flex items-center px-3 py-2 rounded-lg text-base font-medium ${
                   location.pathname === to
                     ? 'bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
                     : 'text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800'
