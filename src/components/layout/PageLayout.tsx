@@ -9,7 +9,7 @@ export function PageLayout({ children }: PageLayoutProps) {
   return (
     <PageTransition>
       <div className="relative min-h-screen pt-16 bg-gray-50 dark:bg-gray-900 overflow-hidden">
-        {/* Ambient lights */}
+
         <div className="ambient-light bg-blue-500/30 left-1/4 top-0 md:block hidden" />
         <div className="ambient-light bg-pink-500/30 right-1/4 bottom-0 md:block hidden" />
         
