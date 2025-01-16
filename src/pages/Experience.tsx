@@ -37,10 +37,10 @@ export default function Experience() {
       </Helmet>
 
       <AnimatedSection>
-        <h2 className="text-4xl font-bold gradient-text pb-1">Experience</h2>
+        <h2 className="cursor-default text-4xl font-bold gradient-text pb-1">Experience</h2>
       </AnimatedSection>
       
-      <div className="mt-6 space-y-8">
+      <div className="cursor-default mt-6 space-y-8">
         {experiences.map((exp, index) => (
           <AnimatedSection key={exp.company} delay={index * 0.2}>
             <div className="card-gradient rounded-lg shadow-lg p-6 border border-white/10">
