@@ -14,10 +14,10 @@ export default function Contact() {
       </Helmet>
 
       <AnimatedSection>
-        <h2 className="text-4xl font-bold gradient-text pb-1">Contact</h2>
+        <h2 className="cursor-default text-4xl font-bold gradient-text pb-1">Contact</h2>
       </AnimatedSection>
       
-      <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="cursor-default mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <AnimatedSection delay={0.2}>
           <div className="card-gradient rounded-lg p-6">
             <p className="text-lg text-gray-600 dark:text-gray-400">
@@ -48,7 +48,7 @@ export default function Contact() {
                 </span>
               </a>
               <a 
-                href="https://maps.app.goo.gl/sq5JJXYfAHbKLV8L7"
+                href="https://www.google.com/search?q=anupa.lk"
                 className="flex items-center group"
               >
                 <div className="p-3 rounded-full bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">

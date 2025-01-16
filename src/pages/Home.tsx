@@ -24,13 +24,13 @@ export default function Home() {
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-blue-500/20 to-pink-500/20 animate-pulse" />
           </div>
           
-          <h1 className="mt-6 text-5xl font-bold gradient-text">
+          <h1 className="cursor-default mt-6 text-5xl font-bold gradient-text">
             Anupa Prabhasara
           </h1>
-          <p className="mt-2 text-xl text-gray-600 dark:text-gray-400">
+          <p className="cursor-default mt-2 text-xl text-gray-600 dark:text-gray-400">
             Software Engineering Undergraduate
           </p>
-          <p className="mt-4 max-w-2xl mx-auto text-gray-500 dark:text-gray-400">
+          <p className="cursor-default mt-4 max-w-2xl mx-auto text-gray-500 dark:text-gray-400">
             Hi! I’m Anupa Prabhasara, a Software Engineering Undergraduate passionate about web development and software engineering. This site showcases my projects and ideas, blending technical skills with creative design to create user-friendly experiences.<br /><br />Join me as I explore how technology solves problems and improves lives. Let’s build something great together!
           </p>
           

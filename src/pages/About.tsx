@@ -13,17 +13,17 @@ export default function About() {
       </Helmet>
 
       <AnimatedSection>
-        <h2 className="text-4xl font-bold gradient-text pb-1">About Me</h2>
+        <h2 className="cursor-default text-4xl font-bold gradient-text pb-1">About Me</h2>
       </AnimatedSection>
       
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <AnimatedSection delay={0.2}>
         <div className="prose dark:prose-invert">
-            <p className="text-gray-600 dark:text-gray-400">
+            <p className="cursor-default text-gray-600 dark:text-gray-400">
               Hi, I’m Anupa Prabhasara, a Software Engineering undergraduate with a passion for web development and software engineering. I love turning ideas into functional and user-friendly digital solutions.<br /><br />Through my studies and projects, I explore how technology can solve real-world challenges and improve everyday experiences. From designing websites to developing software, I enjoy every step of the process—learning, experimenting, and creating.<br /><br />This website is a space to share my journey, projects, and the knowledge I’ve gained along the way. Let’s connect and create something amazing together!
             </p>
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white mt-6">Skills</h3>
-            <ul className="mt-4 space-y-2">
+            <h3 className="cursor-default text-xl font-semibold text-gray-900 dark:text-white mt-6">Skills</h3>
+            <ul className="cursor-default mt-4 space-y-2">
               <li className="text-gray-600 dark:text-gray-400">
                 Frontend: HTML, CSS, Vanilla JS, React JS, TypeScript, Tailwind CSS
               </li>

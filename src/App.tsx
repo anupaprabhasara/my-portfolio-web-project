@@ -6,6 +6,7 @@ import { Navigation } from './components/Navigation';
 import { LoadingSpinner } from './components/LoadingSpinner';
 import { useTheme } from './hooks/useTheme';
 import { useRoutePersistence } from './hooks/useRoutePersistence';
+import DisableActions from './components/DisableActions';
 
 const Home = lazy(() => import('./pages/Home').then(module => ({ default: module.default })));
 const About = lazy(() => import('./pages/About').then(module => ({ default: module.default })));
@@ -19,7 +20,8 @@ function AppRoutes() {
   return (
     <Suspense fallback={<LoadingSpinner />}>
       <AnimatePresence mode="wait">
-      <Helmet>
+        <DisableActions />
+        <Helmet>
           <script type="application/ld+json">
             {`
               {
