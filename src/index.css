@@ -7,12 +7,18 @@
     -webkit-tap-highlight-color: transparent;
   }
 
-  /* Hide scrollbar */
-  ::-webkit-scrollbar {
-    display: none;
+  body {
+    @apply bg-gray-50 dark:bg-gray-900;
+  }
+  
+  #root {
+    @apply gradient-background absolute inset-0;
   }
 
-  /* Light theme scrollbar */
+  ::-webkit-scrollbar {
+    @apply hidden;
+  }
+
   .light ::-webkit-scrollbar {
     @apply w-2;
   }
@@ -25,7 +31,6 @@
     @apply bg-gray-300 hover:bg-gray-400 rounded-full;
   }
 
-  /* Dark theme scrollbar */
   .dark ::-webkit-scrollbar {
     @apply w-2;
   }
