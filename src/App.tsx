@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
+import { Helmet } from 'react-helmet';
 import { Suspense, lazy } from 'react';
 import { Navigation } from './components/Navigation';
 import { LoadingSpinner } from './components/LoadingSpinner';
@@ -18,6 +19,47 @@ function AppRoutes() {
   return (
     <Suspense fallback={<LoadingSpinner />}>
       <AnimatePresence mode="wait">
+      <Helmet>
+          <script type="application/ld+json">
+            {`
+              {
+                "@context": "https://schema.org",
+                "@type": "Person",
+                "name": "Anupa Prabhasara",
+                "description": "A Software Engineering undergraduate with a passion for web development and software engineering",
+                "url": "https://www.anupa.lk",
+                "image": "https://www.anupa.lk/assets/hero-BxTA0USW.jpg",
+                "sameAs": [
+                  "https://www.linkedin.com/in/anupaprabhasara",
+                  "https://www.github.com/anupaprabhasara",
+                  "https://www.twitter.com/anupaprabhasara"
+                ],
+                "jobTitle": "Software Engineering Undergraduate",
+                "worksFor": {
+                  "@type": "Organization",
+                  "name": "SLIIT",
+                  "url": "https://www.sliit.lk"
+                },
+                "knowsAbout": [
+                  "Web Development",
+                  "Software Engineering",
+                  "Frontend Development",
+                  "Backend Development",
+                  "Cloud Computing"
+                ],
+                "skills": [
+                  "HTML", "CSS", "Vanilla JS", "React JS", "TypeScript", "Tailwind CSS",
+                  "Node.js", "Express.js", "GraphQL", "MongoDB", "MySQL", "PHP", "AWS",
+                  "DigitalOcean", "Ubuntu Server", "Git", "GitHub", "VS Code", "Android Studio"
+                ],
+                "mainEntityOfPage": {
+                  "@type": "WebPage",
+                  "@id": "https://www.anupa.lk"
+                }
+              }
+            `}
+          </script>
+        </Helmet>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
