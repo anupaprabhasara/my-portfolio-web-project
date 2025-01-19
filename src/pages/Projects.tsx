@@ -6,6 +6,10 @@ import BloodDonation from '../assets/blood-donation.png';
 import GPACalculator from '../assets/gpa-calculator.png';
 import HTMLPortfolio from '../assets/html-portfolio.png';
 import NewsBlog from '../assets/news-blog.png';
+import JavaLMS from '../assets/java-lms.png';
+import TPSriLanka from '../assets/tp-srilanka.png';
+import JaniReside from '../assets/jani-reside.png';
+import VinuSafari from '../assets/vinu-safari.png';
 
 const projects = [
   {
@@ -39,6 +43,38 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JS', 'XML', 'Blogger'],
     github: 'https://github.com/anupaprabhasara/Responsive-Blogger-Theme',
     live: 'https://blogs.anupa.lk',
+  },
+  {
+    title: 'Tour Booking Platform',
+    description: 'Created a responsive tour booking website with WordPress',
+    image: TPSriLanka,
+    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'YoastSEO'],
+    github: 'https://github.com/anupaprabhasara',
+    live: 'https://tourparadises.com',
+  },
+  {
+    title: 'Library Management System',
+    description: 'Created a library management system with Java and MySQL',
+    image: JavaLMS,
+    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'Ubuntu'],
+    github: 'https://github.com/anupaprabhasara/Java-Library-Management-System',
+    live: 'https://www.anupa.lk',
+  },
+  {
+    title: 'Hotel Booking Website',
+    description: 'Created a responsive hotel booking website with WordPress',
+    image: JaniReside,
+    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'Ubuntu'],
+    github: 'https://github.com/anupaprabhasara',
+    live: 'https://janishiresidencies.com',
+  },
+  {
+    title: 'Safari Booking Platform',
+    description: 'Created a responsive safari booking website with WordPress',
+    image: VinuSafari,
+    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'Ubuntu'],
+    github: 'https://github.com/anupaprabhasara',
+    live: 'https://vinusafari.com',
   },
 ];
 
