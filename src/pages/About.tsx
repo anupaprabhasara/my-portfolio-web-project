@@ -18,10 +18,20 @@ export default function About() {
       
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <AnimatedSection delay={0.2}>
-        <div className="prose dark:prose-invert">
+          <div className="prose dark:prose-invert">
             <p className="cursor-default text-gray-600 dark:text-gray-400">
               Hi, I’m Anupa Prabhasara, a Software Engineering undergraduate with a passion for web development and software engineering. I love turning ideas into functional and user-friendly digital solutions.<br /><br />Through my studies and projects, I explore how technology can solve real-world challenges and improve everyday experiences. From designing websites to developing software, I enjoy every step of the process—learning, experimenting, and creating.<br /><br />This website is a space to share my journey, projects, and the knowledge I’ve gained along the way. Let’s connect and create something amazing together!
             </p>
+            <h3 className="cursor-default text-xl font-semibold text-gray-900 dark:text-white mt-6">Education</h3>
+            <ul className="cursor-default mt-4 space-y-2">
+              <li className="text-gray-600 dark:text-gray-400 space-y-2">
+                <p className="font-bold">BSc (Hons) in Information Technology</p>
+                <p>Specialization: Software Engineering</p>
+                <p>Institution: Sri Lanka Institute of Information Technology (SLIIT)</p>
+                <p>Time Period: December 2023 – Present</p>
+                <p>Passes/Grade: First Year Completed with CGPA 3.75</p>
+              </li>
+            </ul>
             <h3 className="cursor-default text-xl font-semibold text-gray-900 dark:text-white mt-6">Skills</h3>
             <ul className="cursor-default mt-4 space-y-2">
               <li className="text-gray-600 dark:text-gray-400">
