@@ -29,7 +29,7 @@ export default function About() {
                 <p>Specialization: Software Engineering</p>
                 <p>Institution: Sri Lanka Institute of Information Technology (SLIIT)</p>
                 <p>Time Period: December 2023 – Present</p>
-                <p>Passes/Grade: First Year Completed with CGPA 3.75</p>
+                <p>Passes/Grade: Current CGPA 3.75</p>
               </li>
             </ul>
             <h3 className="cursor-default text-xl font-semibold text-gray-900 dark:text-white mt-6">Skills</h3>
