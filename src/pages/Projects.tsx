@@ -10,6 +10,7 @@ import JavaLMS from '../assets/java-lms.png';
 import TPSriLanka from '../assets/tp-srilanka.png';
 import JaniReside from '../assets/jani-reside.png';
 import VinuSafari from '../assets/vinu-safari.png';
+import TravelPage from '../assets/travel-page.gif';
 
 const projects = [
   {
@@ -56,7 +57,7 @@ const projects = [
     title: 'Library Management System',
     description: 'Created a library management system with Java and MySQL',
     image: JavaLMS,
-    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'Ubuntu'],
+    technologies: ['Java', 'MySQL', 'Servlet', 'Tomcat', 'MVC'],
     github: 'https://github.com/anupaprabhasara/Java-Library-Management-System',
     live: 'https://www.anupa.lk',
   },
@@ -75,6 +76,14 @@ const projects = [
     technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'Ubuntu'],
     github: 'https://github.com/anupaprabhasara',
     live: 'https://vinusafari.com',
+  },
+  {
+    title: 'Travel Landing Page',
+    description: 'Designed a responsive travel landing page with React',
+    image: TravelPage,
+    technologies: ['React', 'TypeScript', 'Tailwind', 'GSAP', '3DModel'],
+    github: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
+    live: 'https://www.anupa.lk',
   },
 ];
 
