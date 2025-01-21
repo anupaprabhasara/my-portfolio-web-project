@@ -11,6 +11,7 @@ import TPSriLanka from '../assets/tp-srilanka.png';
 import JaniReside from '../assets/jani-reside.png';
 import VinuSafari from '../assets/vinu-safari.png';
 import TravelPage from '../assets/travel-page.gif';
+import BMICalculator from '../assets/bmi-calculator.png';
 
 const projects = [
   {
@@ -35,6 +36,14 @@ const projects = [
     image: TravelPage,
     technologies: ['React', 'TypeScript', 'Tailwind', 'GSAP', '3DModel'],
     github: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
+    live: 'https://www.anupa.lk',
+  },
+  {
+    title: 'BMI Calculator Web App',
+    description: 'Developed a BMI calculator web application with React',
+    image: BMICalculator,
+    technologies: ['React', 'Tailwind', 'TypeScript', 'HTML', 'Sitemap'],
+    github: 'https://github.com/anupaprabhasara/React-BMI-Calculator',
     live: 'https://www.anupa.lk',
   },
   {
