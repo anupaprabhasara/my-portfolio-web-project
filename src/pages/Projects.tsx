@@ -17,7 +17,7 @@ const projects = [
     title: 'Blood Donation Website',
     description: 'A full-stack blood donation solution built with PHP and MySQL',
     image: BloodDonation,
-    technologies: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL'],
+    technologies: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'AJAX'],
     github: 'https://github.com/anupaprabhasara/SLIIT-IWT-Project-2024',
     live: 'https://iwtproject.anupa.lk',
   },
@@ -25,9 +25,17 @@ const projects = [
     title: 'SLIIT GPA Calculator',
     description: 'Developed a GPA calculator web application for SLIIT students',
     image: GPACalculator,
-    technologies: ['HTML', 'React', 'Tailwind', 'TypeScript'],
+    technologies: ['HTML', 'React', 'Tailwind', 'TypeScript', 'Ubuntu'],
     github: 'https://github.com/anupaprabhasara/SLIIT-GPA-Calculator',
     live: 'https://sliitcalc.anupa.lk',
+  },
+  {
+    title: 'Travel Landing Page',
+    description: 'Designed a responsive travel landing page with React',
+    image: TravelPage,
+    technologies: ['React', 'TypeScript', 'Tailwind', 'GSAP', '3DModel'],
+    github: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
+    live: 'https://www.anupa.lk',
   },
   {
     title: 'Simple Portfolio Website',
@@ -77,14 +85,6 @@ const projects = [
     github: 'https://github.com/anupaprabhasara',
     live: 'https://vinusafari.com',
   },
-  {
-    title: 'Travel Landing Page',
-    description: 'Designed a responsive travel landing page with React',
-    image: TravelPage,
-    technologies: ['React', 'TypeScript', 'Tailwind', 'GSAP', '3DModel'],
-    github: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
-    live: 'https://www.anupa.lk',
-  },
 ];
 
 export default function Projects() {
@@ -102,7 +102,7 @@ export default function Projects() {
       
       <div className="cursor-default mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
-          <AnimatedSection key={project.title} delay={index * 0.2}>
+          <AnimatedSection key={project.title} delay={index * 0.05}>
             <div className="card-gradient rounded-lg shadow-lg overflow-hidden border border-white/10">
               <div className="relative">
                 <img
