@@ -1,3 +1,4 @@
+
 import { Helmet } from 'react-helmet';
 import { PageLayout } from '../components/layout/PageLayout';
 import { AnimatedSection } from '../components/AnimatedSection';
@@ -18,36 +19,30 @@ export default function About() {
       
       <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <AnimatedSection delay={0.2}>
-          <div className="prose dark:prose-invert">
+        <div className="prose dark:prose-invert">
             <p className="cursor-default text-gray-600 dark:text-gray-400">
-              Hi, I’m Anupa Prabhasara, a Software Engineering undergraduate with a passion for web development and software engineering. I love turning ideas into functional and user-friendly digital solutions.<br /><br />Through my studies and projects, I explore how technology can solve real-world challenges and improve everyday experiences. From designing websites to developing software, I enjoy every step of the process—learning, experimenting, and creating.<br /><br />This website is a space to share my journey, projects, and the knowledge I’ve gained along the way. Let’s connect and create something amazing together!
+              Hi, I’m Anupa Prabhasara, a Software Engineering undergraduate at SLIIT pursuing a BSc (Hons) in Information Technology, specializing in Software Engineering. I’ve completed my first year with a CGPA of 3.75.<br /><br />I’m passionate about turning ideas into functional, user-friendly digital solutions. This website showcases my journey, projects, and the knowledge I’ve gained. Let’s connect and create something amazing together!
             </p>
-            <h3 className="cursor-default text-xl font-semibold text-gray-900 dark:text-white mt-6">Education</h3>
-            <ul className="cursor-default mt-4 space-y-2">
-              <li className="text-gray-600 dark:text-gray-400 space-y-2">
-                <p className="font-bold">BSc (Hons) in Information Technology</p>
-                <p>Specialization: Software Engineering</p>
-                <p>Institution: Sri Lanka Institute of Information Technology (SLIIT)</p>
-                <p>Time Period: December 2023 – Present</p>
-                <p>Passes/Grade: Current CGPA 3.75</p>
-              </li>
-            </ul>
             <h3 className="cursor-default text-xl font-semibold text-gray-900 dark:text-white mt-6">Skills</h3>
             <ul className="cursor-default mt-4 space-y-2">
               <li className="text-gray-600 dark:text-gray-400">
-                Frontend: HTML, CSS, Vanilla JS, React JS, TypeScript, Tailwind CSS
+                Note: Skills marked with a strikethrough are currently being learned and have not yet been applied to projects. The rest reflect my hands-on project experience.
+              </li>
+              <br />
+              <li className="text-gray-600 dark:text-gray-400">
+                Frontend: Vanilla JS, React JS, TypeScript, <s>Sass</s>, GSAP, Tailwind CSS
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                Backend: Node.js, Express.js, GraphQL, MongoDB, MySQL, PHP
+                Backend: <s>Node.js, Express.js, GraphQL, MongoDB</s>, MySQL, PHP
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                Languages: C, C++, Java, Kotlin
+                Other Languages: C, C++, Java, <s>Kotlin</s>
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                Cloud: AWS, DigitalOcean, Ubuntu Server
+                Cloud: AWS, DigitalOcean, Linux Server
               </li>
               <li className="text-gray-600 dark:text-gray-400">
-                Tools: Git, GitHub, VS Code, Android Studio
+                Tools: Git, GitHub, VS Code, <s>Android Studio</s>
               </li>
             </ul>
           </div>

@@ -44,7 +44,7 @@ export default function Experience() {
         {experiences.map((exp, index) => (
           <AnimatedSection key={exp.company} delay={index * 0.2}>
             <div className="card-gradient rounded-lg shadow-lg p-6 border border-white/10">
-              <div className="flex justify-between items-start">
+              <div className="md:flex md:justify-between md:items-start">
                 <div>
                   <h3 className="text-xl font-semibold text-gray-900 dark:text-white">
                     {exp.position}
