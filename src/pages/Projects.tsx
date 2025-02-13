@@ -20,7 +20,7 @@ const projects = [
     image: BloodDonation,
     technologies: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'AJAX'],
     github: 'https://github.com/anupaprabhasara/SLIIT-IWT-Project-2024',
-    live: 'https://iwtproject.anupa.lk',
+    live: 'https://github.com/anupaprabhasara/SLIIT-IWT-Project-2024',
   },
   {
     title: 'SLIIT GPA Calculator',
@@ -36,7 +36,7 @@ const projects = [
     image: TravelPage,
     technologies: ['React', 'TypeScript', 'Tailwind', 'GSAP', '3DModel'],
     github: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
-    live: 'https://www.anupa.lk',
+    live: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
   },
   {
     title: 'BMI Calculator Web App',
@@ -44,7 +44,7 @@ const projects = [
     image: BMICalculator,
     technologies: ['React', 'Tailwind', 'TypeScript', 'HTML', 'Sitemap'],
     github: 'https://github.com/anupaprabhasara/React-BMI-Calculator',
-    live: 'https://www.anupa.lk',
+    live: 'https://github.com/anupaprabhasara/React-BMI-Calculator',
   },
   {
     title: 'Simple Portfolio Website',
@@ -52,7 +52,7 @@ const projects = [
     image: HTMLPortfolio,
     technologies: ['HTML', 'CSS', 'JS', 'Sitemap', 'Forms'],
     github: 'https://github.com/anupaprabhasara/Simple-Personal-Portfolio',
-    live: 'https://www.anupa.lk',
+    live: 'https://github.com/anupaprabhasara/Simple-Personal-Portfolio',
   },
   {
     title: 'News and Blogging Platform',
@@ -60,7 +60,7 @@ const projects = [
     image: NewsBlog,
     technologies: ['HTML', 'CSS', 'JS', 'XML', 'Blogger'],
     github: 'https://github.com/anupaprabhasara/Responsive-Blogger-Theme',
-    live: 'https://blogs.anupa.lk',
+    live: 'https://github.com/anupaprabhasara/Responsive-Blogger-Theme',
   },
   {
     title: 'Tour Booking Platform',
@@ -76,7 +76,7 @@ const projects = [
     image: JavaLMS,
     technologies: ['Java', 'MySQL', 'Servlet', 'Tomcat', 'MVC'],
     github: 'https://github.com/anupaprabhasara/Java-Library-Management-System',
-    live: 'https://www.anupa.lk',
+    live: 'https://github.com/anupaprabhasara/Java-Library-Management-System',
   },
   {
     title: 'Hotel Booking Website',
