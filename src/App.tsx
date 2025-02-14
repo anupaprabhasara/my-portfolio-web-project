@@ -33,8 +33,8 @@ function AppRoutes() {
                 "image": "https://www.anupa.lk/assets/hero-BxTA0USW.jpg",
                 "sameAs": [
                   "https://www.linkedin.com/in/anupaprabhasara",
-                  "https://www.github.com/anupaprabhasara",
-                  "https://www.twitter.com/anupaprabhasara"
+                  "https://github.com/anupaprabhasara",
+                  "https://x.com/anupaprabhasara"
                 ],
                 "jobTitle": "Software Engineering Undergraduate",
                 "worksFor": {
