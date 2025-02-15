@@ -17,7 +17,7 @@ export function NavLink({ to, icon: Icon, label, isActive, isMobile, onClick }: 
 
   const activeStyles = isActive
     ? "bg-blue-50 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400"
-    : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-gray-800";
+    : "text-gray-600 dark:text-gray-400 hover:bg-gray-50 dark:hover:bg-zinc-900";
 
   return (
     <Link

@@ -47,11 +47,11 @@ export function ContactForm() {
             value={formData.name}
             onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
             required
-            className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
-                     border border-gray-200 dark:border-gray-700 dark:text-white
+            className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-zinc-900/50 
+                     border border-gray-200 dark:border-zinc-800 dark:text-white
                      focus:ring-2 focus:ring-blue-500/25 focus:border-white/50
                      dark:focus:border-gray-800/50 focus:outline-none
-                     placeholder-gray-400 dark:placeholder-gray-500
+                     placeholder-gray-400 dark:placeholder-zinc-600
                      backdrop-blur-sm resize-none"
             placeholder="Your name"
             disabled={isSubmitting}
@@ -71,11 +71,11 @@ export function ContactForm() {
             value={formData.email}
             onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
             required
-            className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
-                     border border-gray-200 dark:border-gray-700 dark:text-white
+            className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-zinc-900/50 
+                     border border-gray-200 dark:border-zinc-800 dark:text-white
                      focus:ring-2 focus:ring-blue-500/25 focus:border-white/50
                      dark:focus:border-gray-800/50 focus:outline-none
-                     placeholder-gray-400 dark:placeholder-gray-500
+                     placeholder-gray-400 dark:placeholder-zinc-600
                      backdrop-blur-sm resize-none"
             placeholder="username@domain.com"
             disabled={isSubmitting}
@@ -95,11 +95,11 @@ export function ContactForm() {
             value={formData.message}
             onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
             required
-            className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
-                     border border-gray-200 dark:border-gray-700 dark:text-white
+            className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-zinc-900/50 
+                     border border-gray-200 dark:border-zinc-800 dark:text-white
                      focus:ring-2 focus:ring-blue-500/25 focus:border-white/50
                      dark:focus:border-gray-800/50 focus:outline-none
-                     placeholder-gray-400 dark:placeholder-gray-500
+                     placeholder-gray-400 dark:placeholder-zinc-600
                      backdrop-blur-sm resize-none"
             placeholder="Your message..."
             disabled={isSubmitting}

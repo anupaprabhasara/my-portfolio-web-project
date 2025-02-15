@@ -22,7 +22,7 @@ export function MobileMenu({ isOpen, onClose, links, currentPath }: MobileMenuPr
 
       {/* Menu Panel */}
       <div
-        className={`fixed inset-y-0 right-0 w-72 bg-white dark:bg-gray-900 shadow-xl transform transition-transform duration-300 ease-out z-50 md:hidden ${
+        className={`fixed inset-y-0 right-0 w-72 bg-white dark:bg-zinc-950 shadow-xl transform transition-transform duration-300 ease-out z-50 md:hidden ${
           isOpen ? 'translate-x-0' : 'translate-x-full'
         }`}
       >
@@ -32,7 +32,7 @@ export function MobileMenu({ isOpen, onClose, links, currentPath }: MobileMenuPr
             <span className="text-lg font-semibold gradient-text">Navigation</span>
             <button
               onClick={onClose}
-              className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800 focus:ring-2 focus:ring-blue-500 transition-colors"
+              className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-900 focus:ring-2 focus:ring-blue-500 transition-colors"
               aria-label="Close menu"
             >
               <X className="w-6 h-6" />

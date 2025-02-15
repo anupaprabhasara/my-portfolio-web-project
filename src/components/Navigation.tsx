@@ -37,7 +37,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
   }, [isOpen]);
 
   return (
-    <nav className="fixed top-0 w-full bg-white/95 dark:bg-gray-900/90 backdrop-blur-lg shadow-lg z-50">
+    <nav className="fixed top-0 w-full bg-white/95 dark:bg-zinc-950/90 backdrop-blur-lg shadow-lg z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
@@ -57,7 +57,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
                 className={`inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium ${
                   location.pathname === to
                     ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-900'
                 }`}
               >
                 <Icon className="w-4 h-4 mr-2" />
@@ -74,7 +74,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
             <ThemeToggle theme={theme} setTheme={setTheme} />
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-900"
               aria-label={isOpen ? 'Close menu' : 'Open menu'}
             >
               {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -96,7 +96,7 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
                 className={`flex items-center px-3 py-2 rounded-lg text-base font-medium ${
                   location.pathname === to
                     ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-zinc-900'
                 }`}
               >
                 <Icon className="w-5 h-5 mr-3" />
