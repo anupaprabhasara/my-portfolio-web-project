@@ -1,31 +1,35 @@
-import { useState } from 'react';
-import { AnimatedSection } from '../AnimatedSection';
-import { sendContactForm } from '../../utils/contact';
-import type { ContactFormData } from '../../types/contact';
+import { useState } from "react";
+import { AnimatedSection } from "../AnimatedSection";
+import { sendContactForm } from "../../utils/contact";
+import type { ContactFormData } from "../../types/contact";
 
 export function ContactForm() {
   const [formData, setFormData] = useState<ContactFormData>({
-    name: '',
-    email: '',
-    message: ''
+    name: "",
+    email: "",
+    message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
+  const [submitStatus, setSubmitStatus] = useState<
+    "idle" | "success" | "error"
+  >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setSubmitStatus('idle');
-    setErrorMessage('');
+    setSubmitStatus("idle");
+    setErrorMessage("");
 
     try {
       await sendContactForm(formData);
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      setSubmitStatus("success");
+      setFormData({ name: "", email: "", message: "" });
     } catch (error) {
-      setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Failed to send message');
+      setSubmitStatus("error");
+      setErrorMessage(
+        error instanceof Error ? error.message : "Failed to send message"
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -45,7 +49,9 @@ export function ContactForm() {
             type="text"
             id="name"
             value={formData.name}
-            onChange={(e) => setFormData(prev => ({ ...prev, name: e.target.value }))}
+            onChange={(e) =>
+              setFormData((prev) => ({ ...prev, name: e.target.value }))
+            }
             required
             className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
                      border border-gray-200 dark:border-gray-700 dark:text-white
@@ -69,7 +75,9 @@ export function ContactForm() {
             type="email"
             id="email"
             value={formData.email}
-            onChange={(e) => setFormData(prev => ({ ...prev, email: e.target.value }))}
+            onChange={(e) =>
+              setFormData((prev) => ({ ...prev, email: e.target.value }))
+            }
             required
             className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
                      border border-gray-200 dark:border-gray-700 dark:text-white
@@ -93,7 +101,9 @@ export function ContactForm() {
             id="message"
             rows={6}
             value={formData.message}
-            onChange={(e) => setFormData(prev => ({ ...prev, message: e.target.value }))}
+            onChange={(e) =>
+              setFormData((prev) => ({ ...prev, message: e.target.value }))
+            }
             required
             className="w-full px-4 py-3 rounded-lg bg-white/50 dark:bg-gray-800/50 
                      border border-gray-200 dark:border-gray-700 dark:text-white
@@ -105,14 +115,14 @@ export function ContactForm() {
             disabled={isSubmitting}
           />
         </div>
-        
-        {submitStatus === 'success' && (
+
+        {submitStatus === "success" && (
           <div className="text-green-600 dark:text-green-400 text-sm font-medium bg-green-50 dark:bg-green-900/20 p-3 rounded-lg">
             Message sent successfully! We'll get back to you soon.
           </div>
         )}
 
-        {submitStatus === 'error' && (
+        {submitStatus === "error" && (
           <div className="text-red-600 dark:text-red-400 text-sm font-medium bg-red-50 dark:bg-red-900/20 p-3 rounded-lg">
             {errorMessage}
           </div>
@@ -127,7 +137,7 @@ export function ContactForm() {
                    disabled:opacity-50 disabled:cursor-not-allowed
                    font-medium text-sm shadow-lg focus:ring-2"
         >
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+          {isSubmitting ? "Sending..." : "Send Message"}
         </button>
       </form>
     </AnimatedSection>

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 
 const DisableActions: React.FC = () => {
   useEffect(() => {
@@ -10,12 +10,12 @@ const DisableActions: React.FC = () => {
       e.preventDefault();
     };
 
-    document.addEventListener('contextmenu', disableRightClick);
-    document.addEventListener('selectstart', disableTextSelection);
+    document.addEventListener("contextmenu", disableRightClick);
+    document.addEventListener("selectstart", disableTextSelection);
 
     return () => {
-      document.removeEventListener('contextmenu', disableRightClick);
-      document.removeEventListener('selectstart', disableTextSelection);
+      document.removeEventListener("contextmenu", disableRightClick);
+      document.removeEventListener("selectstart", disableTextSelection);
     };
   }, []);
 

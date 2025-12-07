@@ -1,15 +1,15 @@
-import { Link, useLocation } from 'react-router-dom';
-import { Code, Home, User, Briefcase, Mail, Menu, X } from 'lucide-react';
-import { useState, useEffect } from 'react';
-import { ThemeToggle } from './ThemeToggle';
-import type { Theme } from '../types/theme';
+import { Link, useLocation } from "react-router-dom";
+import { Code, Home, User, Briefcase, Mail, Menu, X } from "lucide-react";
+import { useState, useEffect } from "react";
+import { ThemeToggle } from "./ThemeToggle";
+import type { Theme } from "../types/theme";
 
 const navigationLinks = [
-  { to: '/', icon: Home, label: 'Home' },
-  { to: '/about', icon: User, label: 'About' },
-  { to: '/projects', icon: Code, label: 'Projects' },
-  { to: '/experience', icon: Briefcase, label: 'Experience' },
-  { to: '/contact', icon: Mail, label: 'Contact' },
+  { to: "/", icon: Home, label: "Home" },
+  { to: "/about", icon: User, label: "About" },
+  { to: "/projects", icon: Code, label: "Projects" },
+  { to: "/experience", icon: Briefcase, label: "Experience" },
+  { to: "/contact", icon: Mail, label: "Contact" },
 ];
 
 interface NavigationProps {
@@ -20,19 +20,19 @@ interface NavigationProps {
 export function Navigation({ theme, setTheme }: NavigationProps) {
   const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
-  
+
   useEffect(() => {
     setIsOpen(false);
   }, [location.pathname]);
 
   useEffect(() => {
     if (isOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
   }, [isOpen]);
 
@@ -41,8 +41,8 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="text-1xl md:text-3xl font-bold gradient-text hover:opacity-80"
           >
             Anupa
@@ -56,8 +56,8 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
                 to={to}
                 className={`inline-flex items-center px-3 py-2 rounded-lg text-sm font-medium ${
                   location.pathname === to
-                    ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                    ? "bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400"
+                    : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                 }`}
               >
                 <Icon className="w-4 h-4 mr-2" />
@@ -75,19 +75,19 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="p-2 rounded-lg text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
-              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-label={isOpen ? "Close menu" : "Open menu"}
             >
-              {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+              {isOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
             </button>
           </div>
         </div>
 
         {/* Mobile Navigation Menu */}
-        <div
-          className={`md:hidden ${
-            isOpen ? 'block' : 'hidden'
-          }`}
-        >
+        <div className={`md:hidden ${isOpen ? "block" : "hidden"}`}>
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navigationLinks.map(({ to, icon: Icon, label }) => (
               <Link
@@ -95,8 +95,8 @@ export function Navigation({ theme, setTheme }: NavigationProps) {
                 to={to}
                 className={`flex items-center px-3 py-2 rounded-lg text-base font-medium ${
                   location.pathname === to
-                    ? 'bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400'
-                    : 'text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800'
+                    ? "bg-blue-100 dark:bg-blue-900/50 text-blue-600 dark:text-blue-400"
+                    : "text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-800"
                 }`}
               >
                 <Icon className="w-5 h-5 mr-3" />

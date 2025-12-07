@@ -1,31 +1,36 @@
-import { Helmet } from 'react-helmet';
-import { Mail, Phone, MapPin } from 'lucide-react';
-import { PageLayout } from '../components/layout/PageLayout';
-import { AnimatedSection } from '../components/AnimatedSection';
-import { ContactForm } from '../components/forms/ContactForm';
+import { Helmet } from "react-helmet";
+import { Mail, Phone, MapPin } from "lucide-react";
+import { PageLayout } from "../components/layout/PageLayout";
+import { AnimatedSection } from "../components/AnimatedSection";
+import { ContactForm } from "../components/forms/ContactForm";
 
 export default function Contact() {
   return (
     <PageLayout>
       <Helmet>
-        <title>Contact</title>
-        <meta name="description" content="Get in touch with Anupa Prabhasara for collaboration and projects! Whether you're looking for web development expertise or software solutions, I'm here to create impactful digital experiences together." />
+        <title>Contact Anupa Prabhasara - Software Engineer Intern</title>
+        <meta
+          name="description"
+          content="Get in touch with Anupa Prabhasara for inquiries or opportunities in full-stack development and Robotic Process Automation."
+        />
         <link rel="canonical" href="https://www.anupa.lk/contact" />
       </Helmet>
 
       <AnimatedSection>
-        <h2 className="cursor-default text-4xl font-bold gradient-text pb-1">Contact</h2>
+        <h2 className="cursor-default text-4xl font-bold gradient-text pb-1">
+          Contact
+        </h2>
       </AnimatedSection>
-      
+
       <div className="cursor-default mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         <AnimatedSection delay={0.2}>
-          <div className="card-gradient rounded-lg p-6">
+          <div className="card-gradient rounded-lg shadow-lg p-6">
             <p className="text-lg text-gray-600 dark:text-gray-400">
               I'm always open to discussing new projects, creative ideas, or
               opportunities to be part of your visions.
             </p>
             <div className="mt-8 space-y-6">
-            <a 
+              <a
                 href="mailto:info@anupa.lk"
                 className="flex items-center group"
               >
@@ -36,10 +41,7 @@ export default function Contact() {
                   info@anupa.lk
                 </span>
               </a>
-              <a 
-                href="tel:+94712003344"
-                className="flex items-center group"
-              >
+              <a href="tel:+94712003344" className="flex items-center group">
                 <div className="p-3 rounded-full bg-blue-500/10 group-hover:bg-blue-500/20 transition-colors">
                   <Phone className="w-6 h-6 text-blue-600 dark:text-blue-400" />
                 </div>
@@ -47,7 +49,7 @@ export default function Contact() {
                   +94 (71) 200 3344
                 </span>
               </a>
-              <a 
+              <a
                 href="https://www.google.com/search?q=anupa.lk"
                 className="flex items-center group"
               >
@@ -61,7 +63,7 @@ export default function Contact() {
             </div>
           </div>
         </AnimatedSection>
-        
+
         <ContactForm />
       </div>
     </PageLayout>

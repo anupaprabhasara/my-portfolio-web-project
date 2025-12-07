@@ -1,6 +1,6 @@
-import { motion } from 'framer-motion';
-import type { ReactNode } from 'react';
-import { useScrollReveal } from '../hooks/useScrollReveal';
+import { motion } from "framer-motion";
+import type { ReactNode } from "react";
+import { useScrollReveal } from "../hooks/useScrollReveal";
 
 interface AnimatedSectionProps {
   children: ReactNode;
@@ -17,7 +17,7 @@ export function AnimatedSection({ children, delay = 0 }: AnimatedSectionProps) {
       animate={controls}
       variants={{
         visible: { opacity: 1, y: 0 },
-        hidden: { opacity: 0, y: 50 }
+        hidden: { opacity: 0, y: 50 },
       }}
       transition={{ duration: 0.5, delay }}
     >

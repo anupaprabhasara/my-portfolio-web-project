@@ -1,98 +1,101 @@
-import { Helmet } from 'react-helmet';
-import { Github, ExternalLink } from 'lucide-react';
-import { PageLayout } from '../components/layout/PageLayout';
-import { AnimatedSection } from '../components/AnimatedSection';
-import BloodDonation from '../assets/blood-donation.png';
-import GPACalculator from '../assets/gpa-calculator.png';
-import HTMLPortfolio from '../assets/html-portfolio.png';
-import NewsBlog from '../assets/news-blog.png';
-import JavaLMS from '../assets/java-lms.png';
-import TPSriLanka from '../assets/tp-srilanka.png';
-import JaniReside from '../assets/jani-reside.png';
-import VinuSafari from '../assets/vinu-safari.png';
-import TravelPage from '../assets/travel-page.gif';
-import BMICalculator from '../assets/bmi-calculator.png';
+import { Helmet } from "react-helmet";
+import { Github, ExternalLink } from "lucide-react";
+import { PageLayout } from "../components/layout/PageLayout";
+import { AnimatedSection } from "../components/AnimatedSection";
+import AirQuality from "../assets/air-quality.png";
+import CarRental from "../assets/car-rental.png";
+import BloodDonation from "../assets/blood-donation.png";
+import GPACalculator from "../assets/gpa-calculator.png";
+import HTMLPortfolio from "../assets/html-portfolio.png";
+import NewsBlog from "../assets/news-blog.png";
+import JaniReside from "../assets/jani-reside.png";
+import VinuSafari from "../assets/vinu-safari.png";
+import TravelPage from "../assets/travel-page.gif";
+import BMICalculator from "../assets/bmi-calculator.png";
 
 const projects = [
   {
-    title: 'Blood Donation Website',
-    description: 'A full-stack blood donation solution built with PHP and MySQL',
+    title: "IoT Based Air Quality Monitoring System",
+    description: "An air quality monitoring system using IoT and Gemini API",
+    image: AirQuality,
+    technologies: ["Spring Boot", "Next.js", "Zustand", "MySQL", "Spring Security"],
+    github: "https://github.com/ModithaM/Breathsafe-Server",
+    live: "https://github.com/nipun-munasinghe/Breathsafe-App",
+  },
+  {
+    title: "Java Online Car Rental System",
+    description: "Created a car rental system with Java and MySQL",
+    image: CarRental,
+    technologies: ["Java", "MySQL", "Servlet", "Tomcat", "MVC"],
+    github: "https://github.com/anupaprabhasara/flexiride-vehicle-rental-system",
+    live: "https://github.com/anupaprabhasara/flexiride-vehicle-rental-system",
+  },
+  {
+    title: "Blood Donation Website",
+    description:
+      "A full-stack blood donation solution built with PHP and MySQL",
     image: BloodDonation,
-    technologies: ['HTML', 'CSS', 'JS', 'PHP', 'MySQL', 'AJAX'],
-    github: 'https://github.com/anupaprabhasara/SLIIT-IWT-Project-2024',
-    live: 'https://github.com/anupaprabhasara/SLIIT-IWT-Project-2024',
+    technologies: ["HTML", "CSS", "JS", "PHP", "MySQL", "AJAX"],
+    github: "https://github.com/anupaprabhasara/SLIIT-IWT-Project-2024",
+    live: "https://github.com/anupaprabhasara/SLIIT-IWT-Project-2024",
   },
   {
-    title: 'SLIIT GPA Calculator',
-    description: 'Developed a GPA calculator web application for SLIIT students',
+    title: "SLIIT GPA Calculator",
+    description:
+      "Developed a GPA calculator web application for SLIIT students",
     image: GPACalculator,
-    technologies: ['HTML', 'React', 'Tailwind', 'TypeScript', 'Ubuntu'],
-    github: 'https://github.com/anupaprabhasara/SLIIT-GPA-Calculator',
-    live: 'https://sliitcalc.anupa.lk',
+    technologies: ["HTML", "React", "Tailwind", "TypeScript", "Ubuntu"],
+    github: "https://github.com/anupaprabhasara/SLIIT-GPA-Calculator",
+    live: "https://sliitcalc.anupa.lk",
   },
   {
-    title: 'Travel Landing Page',
-    description: 'Designed a responsive travel landing page with React',
+    title: "Travel Landing Page",
+    description: "Designed a responsive travel landing page with React",
     image: TravelPage,
-    technologies: ['React', 'TypeScript', 'Tailwind', 'GSAP', '3DModel'],
-    github: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
-    live: 'https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP',
+    technologies: ["React", "TypeScript", "Tailwind", "GSAP", "3DModel"],
+    github: "https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP",
+    live: "https://github.com/anupaprabhasara/Travel-Landing-Page-GSAP",
   },
   {
-    title: 'BMI Calculator Web App',
-    description: 'Developed a BMI calculator web application with React',
+    title: "BMI Calculator Web App",
+    description: "Developed a BMI calculator web application with React",
     image: BMICalculator,
-    technologies: ['React', 'Tailwind', 'TypeScript', 'HTML', 'Sitemap'],
-    github: 'https://github.com/anupaprabhasara/React-BMI-Calculator',
-    live: 'https://github.com/anupaprabhasara/React-BMI-Calculator',
+    technologies: ["React", "Tailwind", "TypeScript", "HTML", "Sitemap"],
+    github: "https://github.com/anupaprabhasara/React-BMI-Calculator",
+    live: "https://github.com/anupaprabhasara/React-BMI-Calculator",
   },
   {
-    title: 'Simple Portfolio Website',
-    description: 'A front-end portfolio website with modern looking user interface',
+    title: "Simple Portfolio Website",
+    description:
+      "A front-end portfolio website with modern looking user interface",
     image: HTMLPortfolio,
-    technologies: ['HTML', 'CSS', 'JS', 'Sitemap', 'Forms'],
-    github: 'https://github.com/anupaprabhasara/Simple-Personal-Portfolio',
-    live: 'https://github.com/anupaprabhasara/Simple-Personal-Portfolio',
+    technologies: ["HTML", "CSS", "JS", "Sitemap", "Forms"],
+    github: "https://github.com/anupaprabhasara/Simple-Personal-Portfolio",
+    live: "https://github.com/anupaprabhasara/Simple-Personal-Portfolio",
   },
   {
-    title: 'News and Blogging Platform',
-    description: 'Created a customized news and blogging website with Blogger',
+    title: "News and Blogging Platform",
+    description: "Created a customized news and blogging website with Blogger",
     image: NewsBlog,
-    technologies: ['HTML', 'CSS', 'JS', 'XML', 'Blogger'],
-    github: 'https://github.com/anupaprabhasara/Responsive-Blogger-Theme',
-    live: 'https://github.com/anupaprabhasara/Responsive-Blogger-Theme',
+    technologies: ["HTML", "CSS", "JS", "XML", "Blogger"],
+    github: "https://github.com/anupaprabhasara/Responsive-Blogger-Theme",
+    live: "https://github.com/anupaprabhasara/Responsive-Blogger-Theme",
   },
   {
-    title: 'Tour Booking Platform',
-    description: 'Created a responsive tour booking website with WordPress',
-    image: TPSriLanka,
-    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'YoastSEO'],
-    github: 'https://github.com/anupaprabhasara',
-    live: 'https://tourparadises.com',
-  },
-  {
-    title: 'Library Management System',
-    description: 'Created a library management system with Java and MySQL',
-    image: JavaLMS,
-    technologies: ['Java', 'MySQL', 'Servlet', 'Tomcat', 'MVC'],
-    github: 'https://github.com/anupaprabhasara/Java-Library-Management-System',
-    live: 'https://github.com/anupaprabhasara/Java-Library-Management-System',
-  },
-  {
-    title: 'Hotel Booking Website',
-    description: 'Created a responsive hotel booking website with WordPress',
+    title: "Hotel Booking Website",
+    description: "Created a responsive hotel booking website with WordPress",
     image: JaniReside,
-    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'Ubuntu'],
-    github: 'https://github.com/anupaprabhasara',
-    live: 'https://janishiresidencies.com',
+    technologies: ["WordPress", "PHP", "Brevo", "Nginx", "Ubuntu"],
+    github: "https://github.com/anupaprabhasara",
+    live: "https://janishiresidencies.com",
   },
   {
-    title: 'Safari Booking Platform',
-    description: 'Created a responsive safari booking website with WordPress',
+    title: "Safari Booking Platform",
+    description: "Created a responsive safari booking website with WordPress",
     image: VinuSafari,
-    technologies: ['WordPress', 'PHP', 'Brevo', 'Nginx', 'Ubuntu'],
-    github: 'https://github.com/anupaprabhasara',
-    live: 'https://vinusafari.com',
+    technologies: ["WordPress", "PHP", "Brevo", "Nginx", "Ubuntu"],
+    github: "https://github.com/anupaprabhasara",
+    live: "https://vinusafari.com",
   },
 ];
 
@@ -100,19 +103,24 @@ export default function Projects() {
   return (
     <PageLayout>
       <Helmet>
-        <title>Projects</title>
-        <meta name="description" content="Showcasing Anupa Prabhasara’s diverse range of web development and software engineering projects. From frontend design to backend development, dive into my creative process and the innovative solutions I've developed." />
+        <title>Software Engineering Projects - Full-Stack & RPA Solutions</title>
+        <meta
+          name="description"
+          content="Showcase of technical projects by Anupa Prabhasara, including full-stack development solutions and Robotic Process Automation implementations demonstrating deployment and technical ability."
+        />
         <link rel="canonical" href="https://www.anupa.lk/projects" />
       </Helmet>
 
       <AnimatedSection>
-        <h2 className="cursor-default text-4xl font-bold gradient-text pb-1">Projects</h2>
+        <h2 className="cursor-default text-4xl font-bold gradient-text pb-1">
+          Projects
+        </h2>
       </AnimatedSection>
-      
+
       <div className="cursor-default mt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
         {projects.map((project, index) => (
           <AnimatedSection key={project.title} delay={index * 0.05}>
-            <div className="card-gradient rounded-lg shadow-lg overflow-hidden border border-white/10">
+            <div className="card-gradient rounded-lg shadow-lg overflow-hidden">
               <div className="relative">
                 <img
                   src={project.image}

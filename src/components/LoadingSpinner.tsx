@@ -1,4 +1,4 @@
-import { Loader } from 'lucide-react';
+import { Loader } from "lucide-react";
 
 export function LoadingSpinner() {
   return (
