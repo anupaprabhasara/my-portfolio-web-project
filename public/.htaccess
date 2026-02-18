@@ -1,0 +1,11 @@
+RewriteEngine On
+RewriteBase /
+
+# Redirect non-www to www
+RewriteCond %{HTTP_HOST} ^anupa\.lk [NC]
+RewriteRule ^(.*)$ https://www.anupa.lk/$1 [L,R=301]
+
+# Ensure that React Router handles all routes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ index.html [QSA,L]

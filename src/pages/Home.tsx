@@ -52,7 +52,7 @@ export default function Home() {
               <Github className="w-6 h-6" />
             </a>
             <a
-              href="https://www.linkedin.com/in/anupaprabhasara"
+              href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=anupaprabhasara"
               target="_blank"
               rel="noopener noreferrer"
               className="p-3 rounded-full bg-gray-200 backdrop-blur-sm hover:bg-gray-300 text-gray-500 hover:text-gray-900 dark:bg-white/10 dark:hover:bg-white/20 dark:text-gray-400 dark:hover:text-white"
